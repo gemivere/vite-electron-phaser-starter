@@ -9,29 +9,24 @@ import WebFontFile from '../scripts/fontLoader'
 // ANCHOR settings
 
 
-// @ts-ignore
-export default new Phaser.Class ({
-  Extends: Phaser.Scene,
+export default class MainScene extends Phaser.Scene{
+  constructor() {
+    super('Main Scene')
+  }
 
-  initialize:
+  preload(): void {
 
-  function MainScene(): void {
-    Phaser.Scene.call(this, 'Main Scene')
-  },
-
-  preload: function(): void {
-
-  },
+  }
 
   // ANCHOR create
-  create: function() {
-    
-  },
+  create() {
+   
+  }
 
   // ANCHOR functions
 
   // ANCHOR update
-  update: function() {
+  update() {
 
   }
-})
+}
